@@ -6,6 +6,7 @@ describe('Product', () => {
       const givenPrice = 300;
       
       const product: Product = {
+        id: 1,
         title: 'XBox One',
         description: 'Gaming Console',
         priceInDollars: givenPrice
