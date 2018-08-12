@@ -1,18 +1,14 @@
-import { Product } from './product';
+import { Kentan } from '@kentan-official/core';
+
+import { ForProduct } from '../test/sketches/product.sketch';
 
 describe('Product', () => {
   describe('When a price is given', () => {
     it('should yield the actual price', () => {
       const givenPrice = 300;
-      
-      const product: Product = {
-        id: 1,
-        title: 'XBox One',
-        description: 'Gaming Console',
-        priceInDollars: givenPrice
-      };
+      const product = Kentan.sketch(ForProduct).model();
 
-      expect(product.priceInDollars).toBe(300);
+      expect(product.priceInDollars).toBe(givenPrice);
     });
   });
 });
