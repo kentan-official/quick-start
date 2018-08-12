@@ -5,7 +5,8 @@
   "author": "Gregor Woiwode <gregor.woiwode@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "ts-jest": "^23.1.3"
