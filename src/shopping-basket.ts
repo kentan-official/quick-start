@@ -1,6 +1,6 @@
 import { Product } from './product';
 
 export class ShoppingBasket {
-  products: Product[];
-  total: number;
+  total = 0;
+  products: Product[] = [];
 }
