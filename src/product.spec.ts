@@ -5,10 +5,9 @@ import { ForProduct } from '../test/sketches/product.sketch';
 describe('Product', () => {
   describe('When a price is given', () => {
     it('should yield the actual price', () => {
-      const givenPrice = 300;
       const product = Kentan.sketch(ForProduct).model();
 
-      expect(product.priceInDollars).toBe(givenPrice);
+      expect(product.priceInDollars).toBeGreaterThan(0);
     });
   });
 });
