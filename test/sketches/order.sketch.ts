@@ -2,10 +2,11 @@ import { Sketch } from '@kentan-official/core';
 
 import { Order } from '../../src/order';
 
-const model = new Order([]);
 
 export class ForOrder extends Sketch<Order> {
+  private static readonly model = new Order([]);
+  
   constructor() {
-    super(model);
+    super(ForOrder.model);
   }
 }
